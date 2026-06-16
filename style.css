@@ -1,1 +1,30 @@
-/* Add your CSS here */
+/* Header styles: blue gradient background and readable text */
+header {
+	background: linear-gradient(90deg, #0b66a6 0%, #003f63 100%);
+	color: #ffffff;
+	padding: 3rem 1rem;
+}
+
+header img {
+	height: 48px;
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header h1 {
+	margin: 0.5rem 0 0.25rem;
+	font-size: 2rem;
+}
+
+header p {
+	margin: 0;
+	opacity: 0.95;
+}
+
+/* Basic page layout for readability */
+body {
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	line-height: 1.45;
+	margin: 0;
+}
