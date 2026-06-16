@@ -28,3 +28,28 @@ body {
 	line-height: 1.45;
 	margin: 0;
 }
+
+/* Horizontal timeline: show 4 cards at a time, scrollable */
+.timeline {
+	display: flex;
+	gap: 1rem;
+	overflow-x: auto;
+	padding: 1rem;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+}
+
+.card {
+	flex: 0 0 calc((100% - 3rem) / 4);
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.06);
+	padding: 1rem;
+	border-radius: 8px;
+	min-width: 200px;
+	scroll-snap-align: start;
+}
+
+/* Make the timeline responsive: on narrow screens show larger cards */
+@media (max-width: 700px) {
+	.card { flex: 0 0 80%; }
+}
