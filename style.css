@@ -12,7 +12,7 @@ header > div {
 }
 
 header img {
-	height: 48px;
+	height: 32px;
 	width: auto;
 	display: block;
 	margin: 0 auto 1rem;
@@ -20,7 +20,7 @@ header img {
 
 header h1 {
 	margin: 0.5rem 0 0.25rem;
-	font-size: 2rem;
+	font-size: 2.8rem;
 }
 
 header p {
@@ -44,6 +44,7 @@ body {
 	margin: 0 auto;
 	max-width: 1040px;
 	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
 	align-items: stretch;
 }
@@ -62,6 +63,12 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	overflow: hidden;
+	transition: transform 200ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+	transform: scale(1.05);
 }
 
 .card h2,
