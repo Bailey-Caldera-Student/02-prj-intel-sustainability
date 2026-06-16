@@ -49,9 +49,10 @@ body {
 .card {
 	flex: 0 0 calc((100% - 3rem) / 4);
 	box-sizing: border-box;
-	background: rgba(255, 255, 255, 0.06);
+	background: #ffffff;
 	padding: 1rem;
 	border-radius: 8px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 	scroll-snap-align: start;
 	display: flex;
 	flex-direction: column;
