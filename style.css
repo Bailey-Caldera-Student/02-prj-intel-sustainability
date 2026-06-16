@@ -106,9 +106,19 @@ body {
 	visibility: visible;
 }
 
-/* Make the timeline responsive: on narrow screens show larger cards */
+/* Make the timeline responsive: on narrow screens stack cards vertically */
 @media (max-width: 700px) {
-	.card { flex: 0 0 80%; }
+	.timeline {
+		flex-direction: column;
+		overflow-x: visible;
+		scroll-snap-type: y mandatory;
+	}
+	
+	.card {
+		flex: 0 0 auto;
+		max-width: 100%;
+		scroll-snap-align: start;
+	}
 }
 
 /* Card image sizing so all cards match visually */
